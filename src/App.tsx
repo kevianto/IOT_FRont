@@ -9,7 +9,7 @@ interface SensorData {
 }
 
 interface GroupData {
-  [groupName: string]: SensorData;
+  [groupname: string]: SensorData;
 }
 
 const WS_URL = 'https://iot-584n.onrender.com';
@@ -142,12 +142,12 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {groups.map((group, index) => (
               <div
-                key={group.groupName}
+                key={group.groupname}
                 className={`bg-gradient-to-br ${getGroupColor(index)} border rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105`}
               >
                 <div className="mb-4">
                   <h2 className="text-xl font-bold text-white mb-1">
-                    {group.groupName}
+                    {group.groupname}
                   </h2>
                   <p className="text-xs text-slate-500">
                     Last update: {new Date(group.timestamp).toLocaleTimeString()}
