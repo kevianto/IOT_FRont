@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Thermometer, Droplets, Wifi, WifiOff } from 'lucide-react';
 
 interface SensorData {
-  groupName: string;
+  groupname: string;
   temperature: number;
   humidity: number;
   timestamp: number;
@@ -48,7 +48,7 @@ function App() {
             const data: SensorData = JSON.parse(event.data);
             setGroupData((prev) => ({
               ...prev,
-              [data.groupName]: {
+              [data.groupname]: {
                 ...data,
                 timestamp: Date.now(),
               },
