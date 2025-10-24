@@ -97,7 +97,7 @@ function App() {
           <div className="flex items-center justify-between mb-6">
             <h1 className="text-4xl font-bold text-white flex items-center gap-3">
               <Thermometer className="w-10 h-10 text-blue-400" />
-              IOT Session For Friday 10th
+              IOT Session For Friday 24th
             </h1>
             <div className="flex items-center gap-3">
               {isConnected ? (
