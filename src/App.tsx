@@ -87,7 +87,7 @@ function App() {
   }, []);
 
   const groups = Object.values(groupData).sort((a, b) =>
-    a.groupName.localeCompare(b.groupName)
+    a.groupname.localeCompare(b.groupname)
   );
 
   return (
